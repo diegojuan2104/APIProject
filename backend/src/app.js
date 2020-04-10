@@ -2,14 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-//settings
+//Settings
 app.set('port', process.env.PORT || 3000);
 
-//middlewares
+//Middlewares
 app.use(cors());
 app.use(express.json());
 
-//routes
+//import all the created routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/links', require('./routes/links'));
 

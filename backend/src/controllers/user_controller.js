@@ -6,7 +6,7 @@ const User = require('../models/User');
 
 //get all the users, GET
 userCtrl.getUsers = async (req, res) => {
-	const users = await Link.find();
+	const users = await User.find();
 	res.json(users);
 };
 

@@ -1,4 +1,6 @@
+//imports dotenv, to work with environment vars
 require('dotenv').config();
+//imports all from de db
 require('./database');
 
 const app = require('./app');

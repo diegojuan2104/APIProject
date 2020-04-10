@@ -1,11 +1,11 @@
+//imports mongoose to MongoDB validation, casting, and business logic
 const mongoose = require('mongoose');
 
+//Select a URI from the environment vars, for more security or default
 const URI = process.env.MONGODB_URI ? process.env.MONGODB_URI : 'mongodb://localhost/myLinksdb';
 console.log(URI);
 
-/**
-Ejecutando conexión con mongo
- */
+//Default mongo connect
 mongoose.connect(URI, {
 	useUnifiedTopology: true,
 	useNewUrlParser: true,
@@ -13,6 +13,7 @@ mongoose.connect(URI, {
 	useFindAndModify: false,
 });
 
+//returns an object, which opens the db connection
 const connection = mongoose.connection;
 
 connection.once('open', () => {
