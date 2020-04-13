@@ -34,8 +34,8 @@ userCtrl.putUser = async (req, res) => {
 //delete a User,DELETE
 userCtrl.deleteUser = async (req, res) => {
 	const { username } = req.body;
-	await User.findOneAndUpdate(req.params.id, { username });
-	res.send({ message: 'User updated Updated' });
+	await User.findByIdAndDelete(req.params.id, { username });
+	res.send({ message: 'User Deleted' });
 };
 
 //Exports all the user controllers
