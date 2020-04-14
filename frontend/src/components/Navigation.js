@@ -33,11 +33,6 @@ export default class Navigation extends Component {
 									Create Link
 								</Link>
 							</li>
-							<li className="nav-item active view overlay zoom m-2">
-								<Link className="navbar-brand" to="/user">
-									Create User
-								</Link>
-							</li>
 						</ul>
 					</div>
 				</div>

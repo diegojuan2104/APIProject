@@ -4,10 +4,9 @@ const { Schema, model } = require('mongoose');
 //Link Model/Schema, its like a table in SQl
 const linkSchema = new Schema(
 	{
-		title: String,
+		name: String,
 		link: String,
 		description: String,
-		author: String,
 		date: {
 			type: Date,
 			default: Date.now,

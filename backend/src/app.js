@@ -10,7 +10,6 @@ app.use(cors());
 app.use(express.json());
 
 //import all the created routes
-app.use('/api/users', require('./routes/users'));
 app.use('/api/links', require('./routes/links'));
 
 module.exports = app;
