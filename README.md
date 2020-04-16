@@ -1,10 +1,10 @@
-# APIS PRACTICE
+# APIS PRACTICE - MyLinks
 
 ## BOOKMARKS SIMULATOR - BROWSER MARKERS
 
-Create a web page where you can register internet links that are of interest.
-For example you can save links to youtube videos, images, pages.
-The data to be entered are url (required), name (required), description (optional)
+Create a web page where you can register interest internet links.
+For example, you can save links to youtube videos, images, pages.
+The data to be entered are URL (required), name (required), description (optional)
 
 ### Items to qualify
 
